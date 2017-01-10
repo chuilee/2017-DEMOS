@@ -1,0 +1,22 @@
+{
+	"name": "es6-demos",
+	"version": "1.0.0",
+	"description": "es6 demos",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/chuilee/ES6-DEMOS.git"
+	},
+	"keywords": [
+		"es6"
+	],
+	"author": "chuilee",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/chuilee/ES6-DEMOS/issues"
+	},
+	"homepage": "https://github.com/chuilee/ES6-DEMOS#readme"
+}
