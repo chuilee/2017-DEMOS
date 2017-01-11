@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .box{
+        width: 100%;
+        height: 600px;
+        background: #eee;
+        /* flex */
+        flex: 10em;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        flex-direction: row-reverse;  /* 子项目排列方式 row, cloumn, cloumn-resverse */
+        flex-wrap: wrap; /* 子项目换行方式 wrap-inverse, nowrap */
+        flex-flow: row wrap; /* flex-direction flex-wrap 的缩写 */
+        align-items: stretch; /* 子项目对齐方式 */
+        justify-content: space-between; /* 子项目适用布局方式 */
+      }
+
+      .item {
+        background: #ff0;
+
+        /* flex-item */
+        order: 1;
+        flex-grow: 0;
+        flex-basis: 15%;
+        flex-shrink: 0;
+        /*flex: 0 0 20%; flex-grow flex-shrink flex-basis */
+      }
+
+      .item:nth-child(2n) {
+        background: #cc2200;
+        /*align-self: flex-end;*/
+        /*order: -1;  数值越小越往前*/
+      }
+    </style>
+  </head>l
+  <body>
+    <div class="box">
+      <div class="item">
+        <br>
+        <h1>item1</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item2</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item3</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item4</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item5</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item6</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item7</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+      <div class="item">
+        <h1>item8</h1>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+        ppp <br>
+      </div>
+    </div>
+  </body>
+</html>
