@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+</head>
+<body>
+    <div id="app">
+         <app></app>   
+    </div>
+    <script>
+        window.stu = {
+            name: 'students'
+        }
+
+        Vue.component('child1', {
+            template: "<div>{{stu.name}}</div>",
+            data: function() {
+                var stu = window.stu
+                return {
+                    stu: stu
+                }
+            }
+        })
+
+        Vue.component('child2', {
+            template: '<input v-model="stu.name" value="" />',
+            data: function() {
+                var stu = window.stu
+                return {
+                    stu: stu
+                }
+            }
+        })
+
+        Vue.component('app', {
+            template: '<div><div id="chidl1"></div><div id="child2"></div></div>',
+            data: function(){
+                var stu = window.stu
+                return {
+                    stu: stu
+                }
+            }
+        })
+
+        var appVm = new Vue({
+            el: "#app"
+        })
+    </script>
+</body>
+</html>
